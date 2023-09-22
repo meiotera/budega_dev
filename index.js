@@ -3,6 +3,7 @@ const exphbs = require('express-handlebars');
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(express.static('public'));
 // Instância do mecânisco de renderização
 const hbs = exphbs.create({
     // Diretório onde os partials estão localizados
