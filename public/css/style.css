@@ -1,3 +1,39 @@
-h1 {
-    color: red;
+body {
+    background-color: #ececec;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+}
+
+.container-menu .container-links-nav {
+    height: 100%;
+    display: flex;
+    background-color: rgb(135, 4, 175);
+}
+
+.container-menu .container-links-nav a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    color: white;
+    padding: .5em;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: .2s ease-in-out;   
+}
+
+.container-menu .container-links-nav a:hover {
+    background-color: rgb(105, 2, 136);
+}
+
+
+
+.title {
+    font-size: 2.5em;
 }
