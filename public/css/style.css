@@ -6,10 +6,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.main {
+.main {   
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 20px auto;    
+    overflow: hidden;
 }
 
 .container-menu {
@@ -22,7 +22,7 @@ body {
 
 .container-menu .container-links-nav {
     display: flex;
-    height: 100%;    
+    height: 100%;
     background-color: rgb(135, 4, 175);
 }
 
@@ -48,19 +48,16 @@ body {
 }
 
 .container-sliders {
-    max-width: 100%;
-    height: auto;
-    text-align: center;
-    height: 750px;
-}
-
-.slide {
-    display: flex;
-    overflow: hidden;
-    height: 100%;
-}
-
-.slide img {
     min-width: 100%;
-    height: auto;
+    display: flex;
+    height: 750px;
+    transition: .5s ease-in-out ;
+}
+
+.container-sliders .slider {
+    min-width: 100%;
+}
+
+.container-sliders .slider img{
+    width: 100%;
 }
