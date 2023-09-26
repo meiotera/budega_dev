@@ -6,7 +6,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.main {   
+.header {   
     max-width: 1440px;
     margin: 20px auto;    
     overflow: hidden;
@@ -57,8 +57,10 @@ body {
 .container-sliders {
     min-width: 100%;
     display: flex;
-    height: 650px;
+    height: 700px;
     transition: 1s ease-in-out;
+    position: relative;
+    z-index: 1;
 }
 
 .container-sliders .slider {
@@ -68,4 +70,69 @@ body {
 
 .container-sliders .slider img{
     width: 100%;
+    height: 100%;
+}
+.container-cards {
+    padding: 20px;
+    margin-top: -150px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .title {
+    margin-bottom: 20px;
+}
+
+.card .title h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card .title span {
+    color: #777;
+    font-size: 18px;
+}
+
+.card .description {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(105, 2, 136);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: rgba(105, 2, 136, 0.788);
 }
