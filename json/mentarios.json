@@ -1,0 +1,54 @@
+{
+    "comentarios": [
+      {
+        "id": 1,
+        "nome": "João",
+        "email": "joao@email.com",
+        "mensagem": "Ótimo site! Eu aprendi muito com as linguagens de programação que comprei aqui.",
+        "data": "2023-09-23"
+      },
+      {
+        "id": 2,
+        "nome": "Maria",
+        "email": "maria@email.com",
+        "mensagem": "As linguagens de programação oferecidas neste site são incríveis. Recomendo a todos!",
+        "data": "2023-09-22"
+      },
+      {
+        "id": 3,
+        "nome": "Pedro",
+        "email": "pedro@email.com",
+        "mensagem": "A equipe de suporte foi muito útil quando precisei de ajuda. Obrigado!",
+        "data": "2023-09-21"
+      },
+      {
+        "id": 4,
+        "nome": "Ana",
+        "email": "ana@email.com",
+        "mensagem": "Este site me ajudou a melhorar minhas habilidades de programação. Excelente!",
+        "data": "2023-09-20"
+      },
+      {
+        "id": 5,
+        "nome": "Carlos",
+        "email": "carlos@email.com",
+        "mensagem": "Comprei uma linguagem de programação aqui e estou adorando. Muito obrigado!",
+        "data": "2023-09-19"
+      },
+      {
+        "id": 6,
+        "nome": "Lúcia",
+        "email": "lucia@email.com",
+        "mensagem": "Os tutoriais e recursos educacionais são muito úteis. Continuem o bom trabalho!",
+        "data": "2023-09-18"
+      },
+      {
+        "id": 7,
+        "nome": "Rafael",
+        "email": "rafael@email.com",
+        "mensagem": "Estou satisfeito com as opções de linguagens de programação disponíveis aqui. Ótima variedade!",
+        "data": "2023-09-17"
+      }
+    ]
+  }
+  
