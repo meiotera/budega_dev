@@ -17,7 +17,7 @@ body {
     background-color: white;
 }
 
-.container-menu div{
+.container-menu div {
     max-width: 1440px;
     margin: 0 auto;     
     display: flex;
@@ -135,4 +135,56 @@ body {
 
 .card .btn:hover {
     background-color: rgba(105, 2, 136, 0.788);
+}
+
+
+/*main*/
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+/* Estilos para .main */
+/* Estilos para os elementos compartilhados */
+/* Estilos para os elementos compartilhados */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff; /* Adiciona um fundo branco para separar do restante da página */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 550px;
+    height: 350px;
+    box-shadow: 10px 15px 40px;
+    
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title-container h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: rgb(105, 2, 136); /* Cor do título */
+}
+
+.title-container span {
+    font-size: 1.2em;
+    color: #777; /* Cor do subtítulo */
+}
+
+.description {
+    font-size: 1.1em;
+    color: #555; /* Cor do texto de descrição */
+    line-height: 1.5;
 }
