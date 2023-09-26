@@ -10,14 +10,21 @@ body {
     max-width: 1440px;
     margin: 20px auto;    
     overflow: hidden;
+    
+}
+.container-menu {
+    width: 100%;
+    background-color: white;
 }
 
-.container-menu {
+.container-menu div{
+    max-width: 1440px;
+    margin: 0 auto;     
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: white;
+    padding: 0 20px;
 }
 
 .container-menu .container-links-nav {
@@ -50,12 +57,13 @@ body {
 .container-sliders {
     min-width: 100%;
     display: flex;
-    height: 750px;
-    transition: .5s ease-in-out ;
+    height: 650px;
+    transition: 1s ease-in-out;
 }
 
 .container-sliders .slider {
     min-width: 100%;
+    padding: 0 20px;
 }
 
 .container-sliders .slider img{
