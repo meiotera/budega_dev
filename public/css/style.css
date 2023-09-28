@@ -6,12 +6,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.header {   
+.header {
     max-width: 1440px;
-    margin: 20px auto;    
+    margin: 20px auto;
     overflow: hidden;
-    
+
 }
+
 .container-menu {
     width: 100%;
     background-color: white;
@@ -19,7 +20,7 @@ body {
 
 .container-menu div {
     max-width: 1440px;
-    margin: 0 auto;     
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,10 +69,11 @@ body {
     padding: 0 20px;
 }
 
-.container-sliders .slider img{
+.container-sliders .slider img {
     width: 100%;
     height: 100%;
 }
+
 .container-cards {
     padding: 20px;
     margin-top: -150px;
@@ -146,17 +148,17 @@ main {
     padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
 /* Estilos para .main */
-/* Estilos para os elementos compartilhados */
-/* Estilos para os elementos compartilhados */
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #fff; /* Adiciona um fundo branco para separar do restante da página */
+    background-color: #fff;
+    /* Adiciona um fundo branco para separar do restante da página */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -164,7 +166,7 @@ main {
     width: 550px;
     height: 350px;
     box-shadow: 10px 15px 40px;
-    
+
 }
 
 .title-container {
@@ -175,16 +177,65 @@ main {
 .title-container h2 {
     font-size: 2em;
     margin-bottom: 15px;
-    color: rgb(105, 2, 136); /* Cor do título */
+    color: rgb(105, 2, 136);
+    /* Cor do título */
 }
 
 .title-container span {
     font-size: 1.2em;
-    color: #777; /* Cor do subtítulo */
+    color: #777;
+    /* Cor do subtítulo */
 }
 
 .description {
     font-size: 1.1em;
-    color: #555; /* Cor do texto de descrição */
+    color: #555;
+    /* Cor do texto de descrição */
     line-height: 1.5;
+}
+
+/* Estilos para .container-comentarios */
+
+.container-comentarios {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 0 20px;
+    background-color: #f5f5f5; /* Cor de fundo de base */
+    background: linear-gradient(45deg, #7a00b4, #ff4a00); /* Gradiente de cores */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #fff; /* Cor do texto */
+}
+
+.card-coments {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-coment {
+    margin: 20px;
+    height: 150px;
+    max-width: 350px;
+    background-color: #fff; /* Cor de fundo dos comentários */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333; /* Cor do texto dos comentários */
+}
+
+.card-coment h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(105, 2, 136); /* Cor do título dos comentários */
+}
+
+.container-comentarios .title {    
+    margin-bottom: 20px;
+    text-align: center;
 }
