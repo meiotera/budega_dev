@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "nome": "JavaScript",
+        "descricao": "Linguagem de programação amplamente usada para desenvolvimento web.",
+        "preco": 49.99
+    },
+    {
+        "id": 2,
+        "nome": "Python",
+        "descricao": "Linguagem de programação versátil e fácil de aprender.",
+        "preco": 39.99
+    },
+    {
+        "id": 3,
+        "nome": "Java",
+        "descricao": "Linguagem de programação popular para desenvolvimento de aplicativos empresariais.",
+        "preco": 59.99
+    },
+    {
+        "id": 4,
+        "nome": "C++",
+        "descricao": "Linguagem de programação amplamente usada para sistemas e jogos.",
+        "preco": 69.99
+    },
+    {
+        "id": 5,
+        "nome": "Ruby",
+        "descricao": "Linguagem de programação conhecida pela simplicidade e produtividade.",
+        "preco": 45.99
+    },
+    {
+        "id": 6,
+        "nome": "PHP",
+        "descricao": "Linguagem de script popular para desenvolvimento web.",
+        "preco": 34.99
+    },
+    {
+        "id": 7,
+        "nome": "Swift",
+        "descricao": "Linguagem de programação usada para desenvolvimento de aplicativos iOS.",
+        "preco": 79.99
+    },
+    {
+        "id": 8,
+        "nome": "C#",
+        "descricao": "Linguagem de programação da Microsoft para aplicativos Windows e jogos.",
+        "preco": 64.99
+    },
+    {
+        "id": 9,
+        "nome": "Go",
+        "descricao": "Linguagem de programação de alto desempenho da Google.",
+        "preco": 55.99
+    },
+    {
+        "id": 10,
+        "nome": "Rust",
+        "descricao": "Linguagem de programação focada em segurança e desempenho.",
+        "preco": 57.99
+    }
+]
