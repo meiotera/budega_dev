@@ -239,3 +239,33 @@ main {
     margin-bottom: 20px;
     text-align: center;
 }
+
+
+/*Rodape*/
+
+.rodape {
+    margin-top: 120px;
+    background-color: #333; /* Cor de fundo do rodapé */
+    height: 150px;
+    color: #fff; /* Cor do texto no rodapé */
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    font-size: 2em;
+}
+
+.rodape p {
+    margin-bottom: 20px;
+    color: #d67d7d; /* Cor dos links no rodapé */
+}
+
+.rodape a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #fff;
+}
+
+
+.rodape a:hover {
+    color: #ff4a00; /* Cor dos links ao passar o mouse */
+}
