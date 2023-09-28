@@ -4,4 +4,17 @@
 </header>
 <main>
     {{>main}}
+
 </main>
+<div class="container-comentarios">
+    <div class="title">
+        <h2>Veja o que os nossos clientes estão falando!</h2>
+    </div>
+    <div class="card-coments">
+        {{#each comentariosArray}}
+        <div class="card-coment">
+            {{>comentarios}}
+        </div>
+        {{/each}}
+    </div>
+</div>
