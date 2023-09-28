@@ -2,8 +2,10 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const fs = require('fs').promises;
 const app = express();
+const routerLoja = require('./routes/loja')
 const port = process.env.PORT || 3000;
 
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 // Instância do mecânisco de renderização
 const hbs = exphbs.create({
@@ -14,6 +16,8 @@ const hbs = exphbs.create({
 app.engine('handlebars', hbs.engine);
 // Definindo hanldebars como mecânismo de visualização padrão
 app.set('view engine', 'handlebars');
+
+app.use('/', routerLoja);
 
 app.get('/', (req, res) => {
 
