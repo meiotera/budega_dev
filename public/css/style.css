@@ -269,3 +269,69 @@ main {
 .rodape a:hover {
     color: #ff4a00; /* Cor dos links ao passar o mouse */
 }
+
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Estilos para .card-produto */
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: calc(33.33% - 40px); /* Ajuste para 3 colunas em uma linha */
+    box-sizing: border-box;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-produto h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card-produto .description {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card-produto .preco {
+    margin-top: 20px;
+}
+
+.card-produto .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4a00; /* Laranja */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.card-produto .btn:hover {
+    background-color: #ff7e3c; /* Laranja mais claro ao passar o mouse */
+}
