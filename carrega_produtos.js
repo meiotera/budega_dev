@@ -1,7 +1,9 @@
 const fs = require('fs').promises;
 
-async function carregaProdutos() {
+async function carregaProdutos(paramUrl) {
+
     try {
+        console.log(paramUrl)
         const produtosJSON = await fs.readFile('./json/produtos.json', 'utf8');
         const dados = JSON.parse(produtosJSON);
         let produtos = [];
@@ -13,6 +15,15 @@ async function carregaProdutos() {
                 preco: produto.preco
             });
         });
+
+        if(paramUrl) {
+            function encotrarNome(array, nome) {
+                return array.find(item => item.nome === nome);
+            }
+
+            const intemEncontrado = encotrarNome(produtos, paramUrl);
+
+        }
 
         return produtos;
 
