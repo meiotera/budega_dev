@@ -3,7 +3,10 @@
         {{#each produtos}}
         <div class="card-produto">
             {{> card_produto}}
-            <button class="btn">Comprar</button>
+            <div class="btns">
+                <button class="btn">Comprar</button>
+                <button class="btn btn-detalhes">Detalhes</button>
+            </div>
         </div>
         {{/each}}
     </div>

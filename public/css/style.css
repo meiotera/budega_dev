@@ -318,11 +318,16 @@ main {
     margin-top: 20px;
 }
 
-.card-produto .btn {
+.btns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-produto .btn,
+.card-produto .btn-detalhes {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ff4a00; /* Laranja */
-    color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 18px;
@@ -330,8 +335,25 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 20px;
+    width: 100%; /* Ocupa a largura do contêiner */
+    max-width: 180px; /* Define uma largura máxima para o botão */
+    text-align: center; /* Centraliza o texto */
+}
+
+.card-produto .btn {
+    background-color: #ff4a00; /* Laranja */
+    color: #fff;
 }
 
 .card-produto .btn:hover {
     background-color: #ff7e3c; /* Laranja mais claro ao passar o mouse */
+}
+
+.card-produto .btn-detalhes {    
+    background-color: #ffee00; /* Amarelo */
+    color: #333;
+}
+
+.card-produto .btn-detalhes:hover {
+    background-color: #e4b006ce; /* Amarelo mais claro ao passar o mouse */
 }
