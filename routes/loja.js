@@ -7,7 +7,7 @@ const caminho = path.join(__dirname, '../views');
 router.get('/loja', async (req, res) => {
 
     try {
-        let produtos = await carregaProdutos();
+        let produtos = await carregaProdutos();        
 
         res.render(`${caminho}/produtos`, { produtos })
 

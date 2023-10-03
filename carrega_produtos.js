@@ -1,9 +1,7 @@
 const fs = require('fs').promises;
 
 async function carregaProdutos(paramUrl) {
-
     try {
-        console.log(paramUrl)
         const produtosJSON = await fs.readFile('./json/produtos.json', 'utf8');
         const dados = JSON.parse(produtosJSON);
         let produtos = [];
@@ -12,24 +10,28 @@ async function carregaProdutos(paramUrl) {
             produtos.push({
                 nome: produto.nome,
                 descricao: produto.descricao,
-                preco: produto.preco
+                preco: produto.preco,
+                detalhes: produto.detalhes
             });
         });
 
-        if(paramUrl) {
-            function encotrarNome(array, nome) {
-                return array.find(item => item.nome === nome);
-            }
-
-            const intemEncontrado = encotrarNome(produtos, paramUrl);
-
+        if (paramUrl) {
+            // Chame a função e retorne o resultado
+            console.log(paramUrl)
+            return encontrarNome(produtos, paramUrl);
         }
 
         return produtos;
-
     } catch (error) {
         console.log(error);
     }
 }
+
+// Defina a função fora do escopo da carregaProdutos
+function encontrarNome(array, nome) {    
+   
+    return array.filter(item => item.nome === nome);
+}
+
 
 module.exports = carregaProdutos;

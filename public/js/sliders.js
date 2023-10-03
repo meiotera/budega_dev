@@ -1,5 +1,6 @@
 let div_carrossel = document.querySelector('.container-sliders');
-let div_img = document.querySelectorAll('.container-sliders .slider')
+let div_img = document.querySelectorAll('.container-sliders .slider');
+
 
 let idx = 0;
 
@@ -15,3 +16,4 @@ function carrossel() {
 }
 
 setInterval(carrossel, 3000);
+
