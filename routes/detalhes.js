@@ -8,31 +8,20 @@ router.use(express.json());
 router.use(express.urlencoded({ extended: true }));
 
 router.get('/detalhes/?', async (req, res) => {
-    const produtoUrl = req.query.prod;    
-   
+    const produtoUrl = req.query.prod;  
     
     try {       
-        let produto = await carregaProduto(produtoUrl);
-
-        console.log(produto)
+        let produto = await carregaProduto(produtoUrl);        
            
         let nome = produto[0].nome;
         let descricao = produto[0].descricao;
         let preco = produto[0].preco;
-        let anoLancamento = produto[0].detalhes[0];
-        
+        let anoLancamento = produto[0].detalhes.anoLancamento;
+        let criador = produto[0].detalhes.criador;
+        let paradigma = produto[0].detalhes.paradigma;
+        let utilizacao = produto[0].detalhes.utilizacao;
 
-        /*
-            "detalhes": {
-            "anoLancamento": 1995,
-            "criador": "Netscape Communications Corporation",
-            "paradigma": "Multi-paradigma",
-            "utilizacao": "Desenvolvimento web, aplicativos do lado do cliente, servidor, IoT"
-        }
-        
-        */
-
-        res.render(`${caminho}/detalhes`, { nome, descricao, preco, anoLancamento });
+        res.render(`${caminho}/detalhes`, { nome, descricao, preco, anoLancamento, criador,paradigma, utilizacao });
 
     } catch (error) {
         console.log(error)

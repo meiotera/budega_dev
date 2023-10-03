@@ -16,8 +16,7 @@ async function carregaProdutos(paramUrl) {
         });
 
         if (paramUrl) {
-            // Chame a função e retorne o resultado
-            console.log(paramUrl)
+            // Chame a função e retorne o resultado            
             return encontrarNome(produtos, paramUrl);
         }
 
@@ -29,7 +28,6 @@ async function carregaProdutos(paramUrl) {
 
 // Defina a função fora do escopo da carregaProdutos
 function encontrarNome(array, nome) {    
-   
     return array.filter(item => item.nome === nome);
 }
 

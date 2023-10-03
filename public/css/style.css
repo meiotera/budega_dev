@@ -1,9 +1,12 @@
 /* Estilos base */
 body {
     background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Adicione esta linha */
 }
 
 .header {
@@ -61,6 +64,7 @@ body {
     height: 700px;
     transition: 1s ease-in-out;
     position: relative;
+
     z-index: 1;
 }
 
@@ -144,6 +148,7 @@ body {
 
 main {
     max-width: 1440px;
+    flex: 1;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -279,7 +284,7 @@ main {
 }
 
 /* Estilos para .card-produto */
-.card-produto {
+.card-produto, .card-detalhes {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -300,7 +305,7 @@ main {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.card-produto h2 {
+.card-produto h2, .card-detalhes h2 {
     color: #333;
     font-size: 24px;
     margin-bottom: 20px;
@@ -357,3 +362,40 @@ main {
 .card-produto .btn-detalhes:hover {
     background-color: #e4b006ce; /* Amarelo mais claro ao passar o mouse */
 }
+
+
+.card-detalhes {
+    width: 500px;
+    background: linear-gradient(45deg, rgb(105, 2, 136), #ff8a00); /* Gradiente personalizado */
+    color: #fff; /* Cor do texto branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombreamento mais forte */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona uma transição suave */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna */
+}
+
+.card-detalhes h2 {
+    font-size: 4em; /* Tamanho de fonte maior */
+}
+
+.card-detalhes:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Sombreamento mais forte ao passar o mouse */
+}
+
+.card-detalhes p {
+    font-size: 1.8em; /* Tamanho de fonte maior */
+    line-height: 1.5; /* Espaçamento entre linhas aumentado */
+}
+
+.card-detalhes span {
+    font-weight: bold;
+    color: #fff; /* Cor do texto em destaque */
+    background-color: rgb(105, 2, 136); /* Cor de fundo do texto em destaque */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados para o destaque */
+}
+
